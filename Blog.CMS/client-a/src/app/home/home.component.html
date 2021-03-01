@@ -1,1 +1,5 @@
-<p>home works!</p>
+<div class="row">
+    <ng-container *ngFor="let article of articles">
+        <app-article-thumb class="col-sm-12 col-md-12 col-lg-6 " [article]=article></app-article-thumb>
+    </ng-container>
+</div>
