@@ -3,27 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.CMS.API", "Blog.CMS.API\Blog.CMS.API.csproj", "{FF4E7B3E-5019-4054-B8A1-37FADC96AADE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BE", "BE", "{3D8833A8-B1A1-4C06-B43E-158BC7307C9F}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "client-a", "client-a\", "{9AD1CC9B-EB22-4F08-8D4F-CE53CB14AD05}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FE", "FE", "{C73287C5-1A5D-4B19-891E-BE353F7C8345}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.CMS.API", "BE\Blog.CMS.API\Blog.CMS.API.csproj", "{D34B7BF8-B5F0-4CBF-9DD7-08CF4D11C521}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "client-a(1)", "FE\client-a\", "{D91666A6-886F-4415-842F-06E6B6DD0E28}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_63158"
-		Debug.AspNetCompiler.PhysicalPath = "client-a\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_63158\"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_55406"
+		Debug.AspNetCompiler.PhysicalPath = "FE\client-a\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55406\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_63158"
-		Release.AspNetCompiler.PhysicalPath = "client-a\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_63158\"
+		Release.AspNetCompiler.VirtualPath = "/localhost_55406"
+		Release.AspNetCompiler.PhysicalPath = "FE\client-a\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55406\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "63158"
-		SlnRelativePath = "client-a\"
+		VWDPort = "55406"
+		SlnRelativePath = "FE\client-a\"
 	EndProjectSection
 EndProject
 Global
@@ -32,17 +36,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FF4E7B3E-5019-4054-B8A1-37FADC96AADE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FF4E7B3E-5019-4054-B8A1-37FADC96AADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FF4E7B3E-5019-4054-B8A1-37FADC96AADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FF4E7B3E-5019-4054-B8A1-37FADC96AADE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9AD1CC9B-EB22-4F08-8D4F-CE53CB14AD05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9AD1CC9B-EB22-4F08-8D4F-CE53CB14AD05}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9AD1CC9B-EB22-4F08-8D4F-CE53CB14AD05}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{9AD1CC9B-EB22-4F08-8D4F-CE53CB14AD05}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{D34B7BF8-B5F0-4CBF-9DD7-08CF4D11C521}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D34B7BF8-B5F0-4CBF-9DD7-08CF4D11C521}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D34B7BF8-B5F0-4CBF-9DD7-08CF4D11C521}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D34B7BF8-B5F0-4CBF-9DD7-08CF4D11C521}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D91666A6-886F-4415-842F-06E6B6DD0E28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D91666A6-886F-4415-842F-06E6B6DD0E28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D91666A6-886F-4415-842F-06E6B6DD0E28}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{D91666A6-886F-4415-842F-06E6B6DD0E28}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D34B7BF8-B5F0-4CBF-9DD7-08CF4D11C521} = {3D8833A8-B1A1-4C06-B43E-158BC7307C9F}
+		{D91666A6-886F-4415-842F-06E6B6DD0E28} = {C73287C5-1A5D-4B19-891E-BE353F7C8345}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B11F6FA1-30BF-4EED-BCF0-0C4E55DE80DD}
