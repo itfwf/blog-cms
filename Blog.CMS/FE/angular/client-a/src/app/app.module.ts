@@ -8,6 +8,8 @@ import { SideBarHolderComponent } from './shared/side-bar-holder/side-bar-holder
 import { HomeComponent } from './home/home.component';
 import { ArticleThumbComponent } from './components/article-thumb/article-thumb.component';
 import { AuthorThumbComponent } from './components/author-thumb/author-thumb.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ArticleViewerComponent } from './components/article-viewer/article-viewer.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { AuthorThumbComponent } from './components/author-thumb/author-thumb.com
     SideBarHolderComponent,
     HomeComponent,
     ArticleThumbComponent,
-    AuthorThumbComponent
+    AuthorThumbComponent,
+    ArticleViewerComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

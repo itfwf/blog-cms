@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { IArticle } from 'src/app/shared/entities/article.entity';
+import { IArticleThumb } from 'src/app/shared/entities/article-thumb.entity';
 
 @Component({
   selector: 'app-article-thumb',
@@ -8,7 +8,7 @@ import { IArticle } from 'src/app/shared/entities/article.entity';
 })
 export class ArticleThumbComponent implements OnInit {
 
-  @Input() article: IArticle;
+  @Input() article: IArticleThumb;
   constructor() { }
 
   ngOnInit(): void {
