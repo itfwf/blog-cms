@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { from, Observable, of, Subscription } from 'rxjs';
+import { Observable } from 'rxjs';
 import { IArticleThumb } from '../shared/entities/article-thumb.entity';
-import { ArticlesService } from '../core/services/articles.service';
+import { select, Store } from '@ngrx/store';
+import { AppState } from '../app.state';
+import { refreshArticlesRequest } from '../ngrx/articles.actions';
 
 @Component({
   selector: 'app-home',
@@ -10,13 +12,14 @@ import { ArticlesService } from '../core/services/articles.service';
 })
 export class HomeComponent implements OnInit {
 
-  articles: IArticleThumb[];
+  articles$: Observable<IArticleThumb[]>;
 
-  constructor(private articleService: ArticlesService) { }
+  constructor(private store: Store<AppState>) { }
 
   ngOnInit(): void {
 
-    this.articleService.getArticles().subscribe(arts => this.articles = arts);
+    this.store.dispatch(refreshArticlesRequest());
+    this.articles$ = this.store.pipe(select(state => state.articles));
 
   }
 
