@@ -2,7 +2,7 @@
     <img class="card-img-top" src="https://irina.codes/wp-content/uploads/2020/11/Status-codes-for-REST-APIs-1.png"
         alt="Card image cap">
     <div class="card-body">
-        <h5 class="card-title">{{article.title}}</h5>
+        <h5 class="text-center"><a [routerLink]="['/article/'+article.url]">{{article.title}}</a></h5>
         <p class="card-text">How to name your REST endpoint? How does your endpoint look? Are there any guidelines or
             best practices? How to name your endpoints? A short introduction We often use APIs to implement CRUD
             operations, or most APIs start like this, but all of them evolve over time.CRUD is an acronym…</p>
